@@ -57,7 +57,7 @@ RSpec.describe "メッセージ投稿機能", type: :system do
       
       # 画像選択フォームに画像を添付する
       attach_file('message[image]', image_path, make_visible: true)
-      binding.pry
+      
       # 送信した値がDBに保存されていることを確認する
       expect {
         find('input[name="commit"]').click
